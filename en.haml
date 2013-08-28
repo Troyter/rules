@@ -112,14 +112,14 @@
                 %li
                     %i The following mods are explicitly permitted during gameplay:
                 %ul.unstyled
-                    - @mods[:legal].each do |mod|
+                    - ["Optifine", "ArmorStatusHUD/StatusEffectHUD", "Toggle-crouch, granted that it does not allow crouching while typing, looking through inventory, or in any menus", "Texture packs that do not fall under any \"explicitly prohibited\" category", "Minimaps except as specified below"].each do |mod|
                         %li
                             %i.icon-ok
                             = mod
                 %li
                     %i The following mods are explicitly prohibited during gameplay:
                 %ul.unstyled
-                    - @mods[:illegal].each do |mod|
+                    - ["Inventory Sorters", "Auto-sprint, including binding a \"sprint-key\" instead of using double tap", "Mods that expose or enlarge the name-tags of players", "Automatic tool selectors", "Minimaps that show entity positions, or show caves/underground.", "X-rays", "Auto-hitters", "Aimbots", "Fly mods"].each do |mod|
                         %li
                             %i.icon-remove
                             = mod
